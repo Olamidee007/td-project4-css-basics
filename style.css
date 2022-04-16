@@ -53,3 +53,15 @@
 .footer p{
 font-size: 2rem;
 }
+
+@media screen and (min-width: 768px){
+    .nav-item ul{
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .nav-item ul{
+        width: 20%;
+}
+}

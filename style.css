@@ -1,67 +1,160 @@
-.container{
-    background-color: lightcyan;
-    font-size: 100%;
-    font-weight: inherit;
+*{
+    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: oblique;
-    padding: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: fit-content;
+}
+.nav-item ul{
+    display: flex;
+    margin: 1px;
     justify-content: space-between;
 }
-.image-wrapper{
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    box-sizing: content-box;
-    image-resolution: 50px;
-    image-orientation: from-image;
+nav ul{
+    list-style-type: none;
 }
-
-.nav-item{
-   list-style-type:inside;
-    font-size: 1.4rem;
-    font-weight: 400;
+nav{
+    background-color: hotpink;
+    padding: 20px;
 }
-
 .logo{
-    font-size: 2rem;
-    font-weight: 200 lighter;
+    color: blue;
+    font-size: 50px;
+    font-style: oblique;
 }
-
-.logo a{
-    text-decoration: none;
-    color: navy;
-}
-
-.logo a:hover, .nav-item a:hover{
+logo a:hover, .nav-item a:hover{
     color: yellowgreen;
-    text-decoration-style:overline;
-    transition: line-through 500ms linear;
-    background-color: cornsilk;
+    text-decoration: underline;
+    transition: dashed 500ms linear;
+}
+.profile-picture{
+    text-align: center;
+    border: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: hotpink;
+    box-sizing: content-box;
+    border-radius: 50px;
+}
+.My-Intro{
+margin-left: 300px;
+margin-top: 20px;
+margin-right: 400px;
+text-align: center;
+}
+.skills-prompt{
+    background-color: hotpink;
+    padding: 60px;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    border-radius: 50px;
+    overflow: auto;
+}
+.Personal{
+    margin-left: 500px;
+}
+.skills{
+margin-left: 10px;
+margin-right: 50px;
+}
+.content{
+    background-color: hotpink;
+    width: 100%;
+    margin: 2rem;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.resume{
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    text-align: left;
+    border-radius: 50px;
 }
 .footer{
-    display: flex;
-    padding: 2rem;
-    justify-content: space-between;
-    background-color: gray;
-    align-items: center;
+    background-color: hotpink;
     text-align: center;
 }
 
-.footer p{
-font-size: 2rem;
-}
+@media screen and (min-width: 768px) {
+    .content{
+        display: block;
+        margin: 4px;
+        border-radius: 30px;
+        color: white;
+        background-color: teal;
+        overflow: auto;
+    }
+    .nav-item{
+       display: grid;
+       color: brown;
+       background-color: greenyellow;
+       border-radius: 20px;
+    }
+    .My-Intro{
+        margin: 4rem;
+        text-align: center;
+        border-radius: 10px;
+        background-color: greenyellow;
+        color: black;
+        justify-content: space-evenly;
+    }
+    .skills-prompt{
+        display: block;
+        margin: auto;
+        padding: 1rem;
+        justify-content: space-between;
+        width: 100%;
+        text-align: left;
+        background-color: aquamarine;
+    }
+    .profile-picture{
+        background-color: teal;
+    }
+    .footer{
+        background-color: green;
+        color: azure;
+        border-radius: 20px;
 
-@media screen and (min-width: 768px){
-    .nav-item ul{
-        width: 25%;
     }
 }
-
-@media screen and (min-width: 1200px){
-    .nav-item ul{
-        width: 20%;
-}
+@media screen and (min-width:1024px) {
+    .content{
+        display: block;
+        margin: 4px;
+        border-radius: 30px;
+        color: white;
+        background-color: teal;
+        overflow: auto;
+    }
+    .nav-item{
+       display: grid;
+       color: whitesmoke;
+       background-color: teal;
+       border-radius: 20px;
+    }
+    .My-Intro{
+        margin: 4rem;
+        text-align: center;
+        border-radius: 10px;
+        background-color: navajowhite;
+        color: black;
+        justify-content: space-evenly;
+    }
+    .skills-prompt{
+        display: block;
+        margin: auto;
+        padding: 1rem;
+        justify-content: space-between;
+        width: 100%;
+        text-align: left;
+        background-color: teal;
+    }
+    .profile-picture{
+        background-color: transparent;
+    }
+    .footer{
+        background-color: teal;
+        color: azure;
+        border-radius: 20px; 
+    } 
 }
